@@ -28,5 +28,27 @@ NodeJS
         MongoDB
 
     node --version
+    node scriptFileName.js
 
+    npm     -   node package manager
+    ------------------------------------------------
+        is a build tool on node environment
+
+        can create a node project (Node Package)
+        can manage dependencies
+        can perform operations like execution,compilation,testing,packaging...etc
+
+        npm init
+        npm init -y
+        npm install dependency-name --save
+        npm install dependency-name --dev-save
+        npm uninstall dependency-name --save
+        npm uninstall dependency-name --dev-save
+        npm start
+        npm test
+        npm run 
+
+        npm uses package.json file to store the project meta-data and dependency list
+        npm installs all the dependecies in node_modules folder under the project-root.
+    
     

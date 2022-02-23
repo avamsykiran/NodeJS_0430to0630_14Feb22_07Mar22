@@ -1,0 +1,11 @@
+{
+  "name": "proj01",
+  "version": "1.0.0",
+  "description": "a sample node project",
+  "main": "main.js",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "author": "vamsy kiran aripaka",
+  "license": "ISC"
+}
