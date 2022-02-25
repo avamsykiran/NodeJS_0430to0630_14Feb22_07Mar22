@@ -51,4 +51,44 @@ NodeJS
         npm uses package.json file to store the project meta-data and dependency list
         npm installs all the dependecies in node_modules folder under the project-root.
     
-    
+    Modules
+    -------------------------------------------------------
+
+        Each script file is senesed as a module.
+        A module will contains javacript variables,constants and objects.
+
+        RequireJS modules           only on nodejs projects.
+        -------------------------------------------------------
+            each script file is expected to have an implicit object called 'exports'
+
+            any object that needs to be shared out side the curretn module must be attached
+            as a proeprty to teh exports object.
+
+                m1.js
+                ------
+                    const f1 = () => console.log("Hello"); //is a private member of the m1.js module
+
+                    exports.f2 = () => console.log("Hai"); //is a public member of the m1.js module
+
+
+            the function require("module name") is used to access the exports obejct of a module
+
+                main.js
+                ------------
+                    const m1 = require("m1");
+
+                    m1.f2(); //accessing the public funciton 'f2' from 'm1' module
+
+        ECMSScript modules (esm)          work on any javascript runtime (browsers/nodejs..etc)
+        -----------------------------------------------------------------------------------------
+
+            export and import keywords
+
+            export is used to export any object outside the current module
+
+            import is used to access the objects exported from any module
+
+            
+            
+
+
