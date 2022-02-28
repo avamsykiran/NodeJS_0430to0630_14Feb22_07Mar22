@@ -87,6 +87,32 @@ NodeJS
             export is used to export any object outside the current module
 
             import is used to access the objects exported from any module
+    
+    NodeJS Core Modules
+    ----------------------------------------------------------------------------------------------
+        
+        fs
+            readFile(fileName,(err,data)=> {})
+            writeFile(fileName,data,(err)=> {})
+            appendFile(fileName,data,(err)=> {})
+            unlink(fileName,(err)=> {})
+            rename(fileName,newFielName,(err)=> {})
+            
+        http
+            createServer((req,resp) => {}) : server
+
+            server.listen(port);
+
+            resp.writeHead(status,{'header':'value',...})
+            resp.write(contnet);
+            resp.end();
+
+            req.url
+
+        url
+            parse('any url')
+
+        
 
             
             
