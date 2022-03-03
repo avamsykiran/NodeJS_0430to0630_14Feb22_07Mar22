@@ -1,0 +1,16 @@
+{
+  "name": "proj08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Vamsy Kiran Aripaka",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

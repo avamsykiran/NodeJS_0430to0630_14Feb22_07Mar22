@@ -110,9 +110,18 @@ NodeJS
             req.url
 
         url
-            parse('any url')
+            parse('any url') //deprecated
 
-        
+            URL
+            URLSearchParams
+
+    NodeJS REST api
+    ----------------------------------------------------------------------------------------------
+    
+        What is REST API?
+        Common Standards to follow for a REST api?
+        expressjs - a framework on nodejs to generate rest api.
+
 
             
             

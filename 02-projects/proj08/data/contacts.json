@@ -1,0 +1,25 @@
+{
+    "contacts":[
+        {
+            "id":1,
+            "firstName":"Vamsy Kiran",
+            "lastName":"Aripaka",
+            "mobile":"9052224755",
+            "mailId":"vamsy@gmail.com"
+        },
+        {
+            "id":2,
+            "firstName":"Suseela",
+            "lastName":"Aripaka",
+            "mobile":"9550204755",
+            "mailId":"suseela@gmail.com"
+        },
+        {
+            "id":3,
+            "firstName":"Srinu",
+            "lastName":"Dachepalli",
+            "mobile":"9052224777",
+            "mailId":"srinu@gmail.com"
+        }
+    ]
+}
