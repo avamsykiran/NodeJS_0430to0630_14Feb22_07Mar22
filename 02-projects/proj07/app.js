@@ -10,6 +10,7 @@ const reqHandler = (req,resp) => {
     console.log(JSON.stringify(reqUrl));
 
     resp.write("<html><body>");
+    resp.write(`<h3>${req.method}</h3>`)
     resp.write(`<h3>${reqUrl.href}</h3>`)
     resp.write(`<h3>${reqUrl.host}</h3>`)
     resp.write(`<h3>${reqUrl.hostname}</h3>`)

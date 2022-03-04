@@ -119,8 +119,47 @@ NodeJS
     ----------------------------------------------------------------------------------------------
     
         What is REST API?
+
+            REpresentational State Transfer
+            are web services designed to be called and consumed on HTTP protocol.
+
+            + http protocol already supports a variaty of media liek json,xml,text,bianry ..etc
+            + http protocol has a definitly defined status-code setup to ease the communication,
+             of success or request progress or failure.
+
         Common Standards to follow for a REST api?
+
+            1. HTTP Methods to CRUD operation m mapping
+
+                GET         retrival
+                POST        creating a record
+                PUT         updating
+                PATCH       selective update
+                DELETE      deleting a record
+                
+                .....etc
+
+            2. HTTP Status Codes
+
+                1xx - indicate successful reception of a req,
+                3xx - indicates the redirection of a response
+
+                2xx     Signaling that the requested job is done
+                        200     OK          successful execution of a GET req
+                        201     CREATED     successful execution of a POST req
+                        202     ACCEPTED    successful execution of a PUT/PATCH req
+                        204     NO CONTENT  successful execution of a DELETE req
+                
+                4xx     Signaling that the reqeust can not be honoured due to a client side error
+                        400     BAD REQUEST when the incoming data is not valid or req url is not valid...
+                        404     NTO FOUND   when a req resource is not available.
+
+                5xx     Signaling that the reqeust can not be honoured due to a server side error
+                        500     INTERNAL SERVER ERROR
+
         expressjs - a framework on nodejs to generate rest api.
+
+        
 
 
             
