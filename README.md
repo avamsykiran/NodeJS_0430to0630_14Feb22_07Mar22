@@ -159,6 +159,24 @@ NodeJS
 
         expressjs - a framework on nodejs to generate rest api.
 
+            npm install express --save
+
+            express()  returns a pre-config..ed server object.
+
+            let app = express();
+
+            app.get(url,(req,resp) => {});
+            app.put(url,(req,resp) => {});
+            app.post(url,(req,resp) => {});
+            app.delete(url,(req,resp) => {});
+
+            app.use((req,resp,next) => {}); //middleware or interceptor
+                    'use' will invoke the provided callback before routing any incoming req.
+                    any common logic like logging or security check or req media conversion ...etc
+                    can be doen inside the callbacks of the 'use' method...!
+
+
+
         
 
 
