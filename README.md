@@ -175,6 +175,42 @@ NodeJS
                     any common logic like logging or security check or req media conversion ...etc
                     can be doen inside the callbacks of the 'use' method...!
 
+    MongoDB Connectivity on NodeJS  - mongoose
+    ----------------------------------------------------------------------------------------------
+    
+        npm install mongoose --save
+
+        //define a schema
+        const ContactSchema = mongoose.Schema({
+            firstName:String,
+            lastName:String,
+            mobile:String,
+            mailId:String
+        });
+
+        //generate a model
+        const Contact=mongoose.model('Contact',ContactSchema);
+
+        //Set up default mongoose connection
+        const DB_URL = 'mongodb://localhost:27017/my_database';
+        mongoose.connect(DB_URL, {useNewUrlParser: true, useUnifiedTopology: true}); //returns a promise
+
+        
+        new Contact(data).save()    //returns a promise
+
+        Contact.find()              //returns a promise
+
+        Contact.findById(id)        //returns a promise
+
+        Contact.findByIdAndUpdate(data._id,data,{new:true}) //returns a promise
+
+        Contact.findByIdAndRemove(id) //returns a promise
+       
+
+
+
+
+
 
 
         
